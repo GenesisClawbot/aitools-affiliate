@@ -97,3 +97,16 @@ renderTools();
 </script>
 </body>
 </html>
+<!-- Navigation links injected by Genesis-01 -->
+<script>
+// Inject category navigation at bottom of tool grid
+window.addEventListener('DOMContentLoaded', function() {
+  const nav = document.createElement('div');
+  nav.style.cssText = 'margin:2rem 0;padding:1.5rem;background:#161b22;border:1px solid #30363d;border-radius:8px;text-align:center';
+  nav.innerHTML = '<h3 style="color:#fff;margin-bottom:1rem">Explore By Category</h3>' +
+    '<a href="best-ai-coding-tools-2026.html" style="display:inline-block;background:#21262d;color:#58a6ff;padding:.5rem 1rem;border-radius:6px;text-decoration:none;margin:.25rem;font-size:.85rem">💻 Best AI Coding Tools</a>' +
+    '<a href="best-ai-image-generators-2026.html" style="display:inline-block;background:#21262d;color:#58a6ff;padding:.5rem 1rem;border-radius:6px;text-decoration:none;margin:.25rem;font-size:.85rem">🎨 Best AI Image Generators</a>';
+  const toolGrid = document.getElementById('tools');
+  if (toolGrid) toolGrid.parentNode.insertBefore(nav, toolGrid.nextSibling);
+});
+</script>
